@@ -1,12 +1,77 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Strona z układem</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .main-container {
+            display: flex;
+            flex: 1;
+        }
+
+        .sidebar {
+            width: 20%;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            flex: 1;
+            padding: 20px;
+            background-color: #ffffff;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
 </head>
 <body>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque accusamus ratione eveniet pariatur architecto 
-        porro neque. Harum, quas esse inventore quasi, enim nesciunt nihil rerum omnis cumque dolores eveniet illo.</p>
+
+<header>
+    <h1>Header</h1>
+</header>
+
+<div class="main-container">
+    <div class="sidebar">
+        <h2>Sidebar 1</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus nec felis facilisis scelerisque.</p>
+    </div>
+
+    <div class="container">
+        <h2>Container</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vehicula dolor at turpis efficitur, a varius sapien consequat. Donec nec metus nec nisl ultrices tincidunt. Integer convallis purus nec lorem gravida, sit amet pharetra lorem luctus.</p>
+    </div>
+
+    <div class="sidebar">
+        <h2>Sidebar 2</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum commodo metus at elit varius, et aliquet dui pellentesque.</p>
+    </div>
+</div>
+
+<footer>
+    <p>Footer</p>
+</footer>
+
 </body>
 </html>
