@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: 'Helvetica', sans-serif;
+  margin: 0;
+  background-color: #e0f7fa; /* Delikatny błękit dla tła */
+}
+
+/* Header/logo Title */
+.header {
+  padding: 80px; /* Zwiększenie paddingu */
+  text-align: center;
+  background: #8e44ad; /* Fioletowy zamiast zielonego */
+  color: white;
+  font-size: 32px; /* Zwiększony rozmiar czcionki */
+}
+
+/* Style the top navigation bar */
+.navbar {
+  display: flex;
+  background-color: #2c3e50;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  color: white;
+  padding: 18px 25px; /* Zwiększenie paddingu */
+  text-decoration: none;
+  text-align: center;
+  font-size: 18px; /* Większa czcionka */
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ffb74d; /* Pomarańczowy kolor na hover */
+  color: black;
+}
+
+/* Column container */
+.row {  
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Sidebar/left column */
+.side {
+  flex: 35%; /* Zmiana szerokości sidebaru */
+  background-color: #f5f5f5;
+  padding: 30px; /* Większy padding */
+  font-size: 18px; /* Większa czcionka */
+}
+
+/* Main column */
+.main {
+  flex: 65%; /* Zmiana szerokości głównej kolumny */
+  background-color: #fafafa;
+  padding: 25px;
+  font-size: 17px;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Footer */
+.footer {
+  padding: 30px; /* Większy padding w stopce */
+  text-align: center;
+  background: #34495e; /* Ciemniejszy kolor stopki */
+  color: white;
+  font-size: 20px;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row, .navbar {   
+    flex-direction: column;
+  }
+}
+</style>
+</head>
+<body>
+
+<!-- Note -->
+<div style="background:#ffeb3b;padding:10px;">
+  <h4 style="text-align:center;font-size:24px;">Resize the browser window to see the responsive effect.</h4>
+</div>
+
+<!-- Header -->
+<div class="header">
+  <h1>My Awesome Website</h1>
+  <p>Now with <b>vibrant</b> colors and images!</p>
+</div>
+
+<!-- Navigation Bar -->
+<div class="navbar">
+  <a href="#">Home</a>
+  <a href="#">Services</a>
+  <a href="#">Portfolio</a>
+  <a href="#">Contact</a>
+</div>
+
+<!-- The flexible grid (content) -->
+<div class="row">
+  <div class="side">
+    <h2>About Me</h2>
+    <h5>Photo of me:</h5>
+    <!-- Replacing fakeimg with a real image -->
+    <img src="https://www.dolina-noteci.pl/data/include/img/news/1670238438.jpg" alt="Photo of me" style="width:60%; height: 200px;">
+    <p>Some text about me. I love coding and design!</p>
+    <h3>More Text</h3>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <!-- Replacing fake images with real images -->
+    <img src="https://spidersweb.pl/_next/image?url=https%3A%2F%2Focs-pl.oktawave.com%2Fv1%2FAUTH_2887234e-384a-4873-8bc5-405211db13a2%2Fspidersweb%2F2023%2F11%2Fnajciekawsze-komputery-historia.jpg&w=1200&q=75" alt="Image 1" style="width:100%; height: 200px;"><br><br>
+    <img src="https://img.freepik.com/darmowe-wektory/realistyczna-kompozycja-barwnego-kodu-hakera-z-osoba-tworzy-kody-do-hakowania-i-kradziezy-ilustracji-wektorowych-z-informacjami_1284-18005.jpg" alt="Image 2" style="width:100%; height: 200px;"><br><br>
+    <img src="https://kapitanhack.pl/wp-content/uploads/2023/07/quishing-3.jpg" alt="Image 3" style="width:100%; height: 200px;">
+  </div>
+  <div class="main">
+    <h2>TITLE HEADING</h2>
+    <h5>Title description, Dec 7, 2024</h5>
+    <!-- Replacing fake image with a real image -->
+    <img src="https://dimuro.pl/wp-content/uploads/2021/02/AdobeStock_376149345.jpeg" alt="Image" style="width:80%; height: 200px;">
+    <p>Some text..</p>
+    <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <br>
+    <h2>TITLE HEADING</h2>
+    <h5>Title description, Sep 2, 2024</h5>
+    <!-- Replacing fake image with a real image -->
+    <img src="https://panoramapark.pl/wp-content/uploads/2024/05/dron-slider-new.jpg" alt="Image" style="width:80%; height: 200px;">
+    <p>Some text..</p>
+    <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+  </div>
+</div>
+
+<!-- Footer -->
+<div class="footer">
+  <h2>Footer</h2>
+</div>
+
+</body>
+</html>
